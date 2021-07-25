@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CF41A351C835C10B18313C3 /* Pods_Scanbrew_ScanbrewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB61C64F229A87190332BEDB /* Pods_Scanbrew_ScanbrewUITests.framework */; };
+		8D1C57FD49FCFFE1D4191A76 /* Pods_ScanbrewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B985D227EB679B5FD9C75B4A /* Pods_ScanbrewTests.framework */; };
+		DD2DC1B526ADCB30002A3B28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD2DC1B426ADCB30002A3B28 /* GoogleService-Info.plist */; };
+		DD75FDF72688DD17008BA895 /* ScanbrewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FDF62688DD17008BA895 /* ScanbrewApp.swift */; };
+		DD75FDF92688DD17008BA895 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FDF82688DD17008BA895 /* ContentView.swift */; };
+		DD75FDFB2688DD1B008BA895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD75FDFA2688DD1B008BA895 /* Assets.xcassets */; };
+		DD75FDFE2688DD1B008BA895 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD75FDFD2688DD1B008BA895 /* Preview Assets.xcassets */; };
+		DD75FE092688DD1B008BA895 /* ScanbrewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FE082688DD1B008BA895 /* ScanbrewTests.swift */; };
+		DD75FE142688DD1B008BA895 /* ScanbrewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75FE132688DD1B008BA895 /* ScanbrewUITests.swift */; };
+		DD75FE242688EC3B008BA895 /* IfIsABottleModel 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DD75FE222688EC3B008BA895 /* IfIsABottleModel 1.mlmodel */; };
+		DD75FE252688EC3B008BA895 /* BeerImageClassifier_1_1_03.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DD75FE232688EC3B008BA895 /* BeerImageClassifier_1_1_03.mlmodel */; };
+		DDAB7AC026AD801C00DA9A62 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB7ABF26AD801C00DA9A62 /* ImagePicker.swift */; };
+		F5A3BD5D715A1A91B485804D /* Pods_Scanbrew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB51210F2F2AE7D5CED9C0AD /* Pods_Scanbrew.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD75FE052688DD1B008BA895 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD75FDEB2688DD16008BA895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD75FDF22688DD16008BA895;
+			remoteInfo = Scanbrew;
+		};
+		DD75FE102688DD1B008BA895 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD75FDEB2688DD16008BA895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD75FDF22688DD16008BA895;
+			remoteInfo = Scanbrew;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24CB8DECAAC0259BF3D85FB4 /* Pods-Scanbrew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scanbrew.debug.xcconfig"; path = "Target Support Files/Pods-Scanbrew/Pods-Scanbrew.debug.xcconfig"; sourceTree = "<group>"; };
+		3940CC2459127F40994E1C2C /* Pods-Scanbrew-ScanbrewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scanbrew-ScanbrewUITests.release.xcconfig"; path = "Target Support Files/Pods-Scanbrew-ScanbrewUITests/Pods-Scanbrew-ScanbrewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4FDCB2A076A31A2C117E0503 /* Pods-Scanbrew-ScanbrewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scanbrew-ScanbrewUITests.debug.xcconfig"; path = "Target Support Files/Pods-Scanbrew-ScanbrewUITests/Pods-Scanbrew-ScanbrewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		61EE6F01C92536E7329EC4F1 /* Pods-Scanbrew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scanbrew.release.xcconfig"; path = "Target Support Files/Pods-Scanbrew/Pods-Scanbrew.release.xcconfig"; sourceTree = "<group>"; };
+		A4C1037A110D63EE2AFC7784 /* Pods-ScanbrewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanbrewTests.debug.xcconfig"; path = "Target Support Files/Pods-ScanbrewTests/Pods-ScanbrewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B985D227EB679B5FD9C75B4A /* Pods_ScanbrewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanbrewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB51210F2F2AE7D5CED9C0AD /* Pods_Scanbrew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scanbrew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2DC1B426ADCB30002A3B28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DD75FDF32688DD17008BA895 /* Scanbrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scanbrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD75FDF62688DD17008BA895 /* ScanbrewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanbrewApp.swift; sourceTree = "<group>"; };
+		DD75FDF82688DD17008BA895 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DD75FDFA2688DD1B008BA895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD75FDFD2688DD1B008BA895 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD75FDFF2688DD1B008BA895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD75FE042688DD1B008BA895 /* ScanbrewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanbrewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD75FE082688DD1B008BA895 /* ScanbrewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanbrewTests.swift; sourceTree = "<group>"; };
+		DD75FE0A2688DD1B008BA895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD75FE0F2688DD1B008BA895 /* ScanbrewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanbrewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD75FE132688DD1B008BA895 /* ScanbrewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanbrewUITests.swift; sourceTree = "<group>"; };
+		DD75FE152688DD1B008BA895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD75FE222688EC3B008BA895 /* IfIsABottleModel 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "IfIsABottleModel 1.mlmodel"; sourceTree = "<group>"; };
+		DD75FE232688EC3B008BA895 /* BeerImageClassifier_1_1_03.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BeerImageClassifier_1_1_03.mlmodel; sourceTree = "<group>"; };
+		DDAB7ABF26AD801C00DA9A62 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		EB61C64F229A87190332BEDB /* Pods_Scanbrew_ScanbrewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scanbrew_ScanbrewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF799382320168C44DD214B5 /* Pods-ScanbrewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanbrewTests.release.xcconfig"; path = "Target Support Files/Pods-ScanbrewTests/Pods-ScanbrewTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD75FDF02688DD16008BA895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A3BD5D715A1A91B485804D /* Pods_Scanbrew.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD75FE012688DD1B008BA895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1C57FD49FCFFE1D4191A76 /* Pods_ScanbrewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD75FE0C2688DD1B008BA895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF41A351C835C10B18313C3 /* Pods_Scanbrew_ScanbrewUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAB9B779390A838B982C73A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24CB8DECAAC0259BF3D85FB4 /* Pods-Scanbrew.debug.xcconfig */,
+				61EE6F01C92536E7329EC4F1 /* Pods-Scanbrew.release.xcconfig */,
+				4FDCB2A076A31A2C117E0503 /* Pods-Scanbrew-ScanbrewUITests.debug.xcconfig */,
+				3940CC2459127F40994E1C2C /* Pods-Scanbrew-ScanbrewUITests.release.xcconfig */,
+				A4C1037A110D63EE2AFC7784 /* Pods-ScanbrewTests.debug.xcconfig */,
+				EF799382320168C44DD214B5 /* Pods-ScanbrewTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D48921535BF0D407761D43E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB51210F2F2AE7D5CED9C0AD /* Pods_Scanbrew.framework */,
+				EB61C64F229A87190332BEDB /* Pods_Scanbrew_ScanbrewUITests.framework */,
+				B985D227EB679B5FD9C75B4A /* Pods_ScanbrewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD75FDEA2688DD16008BA895 = {
+			isa = PBXGroup;
+			children = (
+				DD75FDF52688DD17008BA895 /* Scanbrew */,
+				DD75FE072688DD1B008BA895 /* ScanbrewTests */,
+				DD75FE122688DD1B008BA895 /* ScanbrewUITests */,
+				DD75FDF42688DD17008BA895 /* Products */,
+				BAB9B779390A838B982C73A1 /* Pods */,
+				D48921535BF0D407761D43E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD75FDF42688DD17008BA895 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD75FDF32688DD17008BA895 /* Scanbrew.app */,
+				DD75FE042688DD1B008BA895 /* ScanbrewTests.xctest */,
+				DD75FE0F2688DD1B008BA895 /* ScanbrewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD75FDF52688DD17008BA895 /* Scanbrew */ = {
+			isa = PBXGroup;
+			children = (
+				DD2DC1B426ADCB30002A3B28 /* GoogleService-Info.plist */,
+				DD75FDF62688DD17008BA895 /* ScanbrewApp.swift */,
+				DD75FDF82688DD17008BA895 /* ContentView.swift */,
+				DDAB7ABF26AD801C00DA9A62 /* ImagePicker.swift */,
+				DD75FDFA2688DD1B008BA895 /* Assets.xcassets */,
+				DD75FDFF2688DD1B008BA895 /* Info.plist */,
+				DD75FE212688EBCD008BA895 /* MLModels */,
+				DD75FDFC2688DD1B008BA895 /* Preview Content */,
+			);
+			path = Scanbrew;
+			sourceTree = "<group>";
+		};
+		DD75FDFC2688DD1B008BA895 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DD75FDFD2688DD1B008BA895 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DD75FE072688DD1B008BA895 /* ScanbrewTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD75FE082688DD1B008BA895 /* ScanbrewTests.swift */,
+				DD75FE0A2688DD1B008BA895 /* Info.plist */,
+			);
+			path = ScanbrewTests;
+			sourceTree = "<group>";
+		};
+		DD75FE122688DD1B008BA895 /* ScanbrewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD75FE132688DD1B008BA895 /* ScanbrewUITests.swift */,
+				DD75FE152688DD1B008BA895 /* Info.plist */,
+			);
+			path = ScanbrewUITests;
+			sourceTree = "<group>";
+		};
+		DD75FE212688EBCD008BA895 /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				DD75FE232688EC3B008BA895 /* BeerImageClassifier_1_1_03.mlmodel */,
+				DD75FE222688EC3B008BA895 /* IfIsABottleModel 1.mlmodel */,
+			);
+			path = MLModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD75FDF22688DD16008BA895 /* Scanbrew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD75FE182688DD1B008BA895 /* Build configuration list for PBXNativeTarget "Scanbrew" */;
+			buildPhases = (
+				AC465CB5F7E8B4BB35BA633D /* [CP] Check Pods Manifest.lock */,
+				DD75FDEF2688DD16008BA895 /* Sources */,
+				DD75FDF02688DD16008BA895 /* Frameworks */,
+				DD75FDF12688DD16008BA895 /* Resources */,
+				EA0B3FD674EE16F8D57EF1E3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scanbrew;
+			productName = Scanbrew;
+			productReference = DD75FDF32688DD17008BA895 /* Scanbrew.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD75FE032688DD1B008BA895 /* ScanbrewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD75FE1B2688DD1B008BA895 /* Build configuration list for PBXNativeTarget "ScanbrewTests" */;
+			buildPhases = (
+				7AED3E9026F2B6B8AB7A8684 /* [CP] Check Pods Manifest.lock */,
+				DD75FE002688DD1B008BA895 /* Sources */,
+				DD75FE012688DD1B008BA895 /* Frameworks */,
+				DD75FE022688DD1B008BA895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD75FE062688DD1B008BA895 /* PBXTargetDependency */,
+			);
+			name = ScanbrewTests;
+			productName = ScanbrewTests;
+			productReference = DD75FE042688DD1B008BA895 /* ScanbrewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD75FE0E2688DD1B008BA895 /* ScanbrewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD75FE1E2688DD1B008BA895 /* Build configuration list for PBXNativeTarget "ScanbrewUITests" */;
+			buildPhases = (
+				507ED62314274E9B15EE0F72 /* [CP] Check Pods Manifest.lock */,
+				DD75FE0B2688DD1B008BA895 /* Sources */,
+				DD75FE0C2688DD1B008BA895 /* Frameworks */,
+				DD75FE0D2688DD1B008BA895 /* Resources */,
+				A37058E16EFD1E132FFAAF93 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD75FE112688DD1B008BA895 /* PBXTargetDependency */,
+			);
+			name = ScanbrewUITests;
+			productName = ScanbrewUITests;
+			productReference = DD75FE0F2688DD1B008BA895 /* ScanbrewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD75FDEB2688DD16008BA895 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					DD75FDF22688DD16008BA895 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					DD75FE032688DD1B008BA895 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = DD75FDF22688DD16008BA895;
+					};
+					DD75FE0E2688DD1B008BA895 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = DD75FDF22688DD16008BA895;
+					};
+				};
+			};
+			buildConfigurationList = DD75FDEE2688DD16008BA895 /* Build configuration list for PBXProject "Scanbrew" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD75FDEA2688DD16008BA895;
+			productRefGroup = DD75FDF42688DD17008BA895 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD75FDF22688DD16008BA895 /* Scanbrew */,
+				DD75FE032688DD1B008BA895 /* ScanbrewTests */,
+				DD75FE0E2688DD1B008BA895 /* ScanbrewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD75FDF12688DD16008BA895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD75FDFE2688DD1B008BA895 /* Preview Assets.xcassets in Resources */,
+				DD75FDFB2688DD1B008BA895 /* Assets.xcassets in Resources */,
+				DD2DC1B526ADCB30002A3B28 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD75FE022688DD1B008BA895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD75FE0D2688DD1B008BA895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		507ED62314274E9B15EE0F72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scanbrew-ScanbrewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AED3E9026F2B6B8AB7A8684 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScanbrewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A37058E16EFD1E132FFAAF93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scanbrew-ScanbrewUITests/Pods-Scanbrew-ScanbrewUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scanbrew-ScanbrewUITests/Pods-Scanbrew-ScanbrewUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scanbrew-ScanbrewUITests/Pods-Scanbrew-ScanbrewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC465CB5F7E8B4BB35BA633D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scanbrew-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA0B3FD674EE16F8D57EF1E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scanbrew/Pods-Scanbrew-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scanbrew/Pods-Scanbrew-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scanbrew/Pods-Scanbrew-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD75FDEF2688DD16008BA895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD75FDF92688DD17008BA895 /* ContentView.swift in Sources */,
+				DD75FE242688EC3B008BA895 /* IfIsABottleModel 1.mlmodel in Sources */,
+				DDAB7AC026AD801C00DA9A62 /* ImagePicker.swift in Sources */,
+				DD75FE252688EC3B008BA895 /* BeerImageClassifier_1_1_03.mlmodel in Sources */,
+				DD75FDF72688DD17008BA895 /* ScanbrewApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD75FE002688DD1B008BA895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD75FE092688DD1B008BA895 /* ScanbrewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD75FE0B2688DD1B008BA895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD75FE142688DD1B008BA895 /* ScanbrewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD75FE062688DD1B008BA895 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD75FDF22688DD16008BA895 /* Scanbrew */;
+			targetProxy = DD75FE052688DD1B008BA895 /* PBXContainerItemProxy */;
+		};
+		DD75FE112688DD1B008BA895 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD75FDF22688DD16008BA895 /* Scanbrew */;
+			targetProxy = DD75FE102688DD1B008BA895 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DD75FE162688DD1B008BA895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD75FE172688DD1B008BA895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD75FE192688DD1B008BA895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24CB8DECAAC0259BF3D85FB4 /* Pods-Scanbrew.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Scanbrew/Preview Content\"";
+				DEVELOPMENT_TEAM = 6JFG5S2KTX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Scanbrew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jankrzempek.test.Scanbrew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DD75FE1A2688DD1B008BA895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61EE6F01C92536E7329EC4F1 /* Pods-Scanbrew.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Scanbrew/Preview Content\"";
+				DEVELOPMENT_TEAM = 6JFG5S2KTX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Scanbrew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jankrzempek.test.Scanbrew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DD75FE1C2688DD1B008BA895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4C1037A110D63EE2AFC7784 /* Pods-ScanbrewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JFG5S2KTX;
+				INFOPLIST_FILE = ScanbrewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jankrzempek.test.ScanbrewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scanbrew.app/Scanbrew";
+			};
+			name = Debug;
+		};
+		DD75FE1D2688DD1B008BA895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF799382320168C44DD214B5 /* Pods-ScanbrewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JFG5S2KTX;
+				INFOPLIST_FILE = ScanbrewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jankrzempek.test.ScanbrewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scanbrew.app/Scanbrew";
+			};
+			name = Release;
+		};
+		DD75FE1F2688DD1B008BA895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FDCB2A076A31A2C117E0503 /* Pods-Scanbrew-ScanbrewUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JFG5S2KTX;
+				INFOPLIST_FILE = ScanbrewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jankrzempek.test.ScanbrewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Scanbrew;
+			};
+			name = Debug;
+		};
+		DD75FE202688DD1B008BA895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3940CC2459127F40994E1C2C /* Pods-Scanbrew-ScanbrewUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JFG5S2KTX;
+				INFOPLIST_FILE = ScanbrewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jankrzempek.test.ScanbrewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Scanbrew;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD75FDEE2688DD16008BA895 /* Build configuration list for PBXProject "Scanbrew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD75FE162688DD1B008BA895 /* Debug */,
+				DD75FE172688DD1B008BA895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD75FE182688DD1B008BA895 /* Build configuration list for PBXNativeTarget "Scanbrew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD75FE192688DD1B008BA895 /* Debug */,
+				DD75FE1A2688DD1B008BA895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD75FE1B2688DD1B008BA895 /* Build configuration list for PBXNativeTarget "ScanbrewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD75FE1C2688DD1B008BA895 /* Debug */,
+				DD75FE1D2688DD1B008BA895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD75FE1E2688DD1B008BA895 /* Build configuration list for PBXNativeTarget "ScanbrewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD75FE1F2688DD1B008BA895 /* Debug */,
+				DD75FE202688DD1B008BA895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD75FDEB2688DD16008BA895 /* Project object */;
+}
