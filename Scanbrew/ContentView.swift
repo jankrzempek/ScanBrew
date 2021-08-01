@@ -50,8 +50,9 @@ struct ContentView: View {
                     Button("\(alcoholLabel)\n%") {
                         // action here
                     }
+                    .font(.system(size: 21, weight: .bold, design: .default))
                     .multilineTextAlignment(.center)
-                    .frame(width: 100, height: 100, alignment: .center)
+                    .frame(width: 85, height: 85, alignment: .center)
                     .foregroundColor(.white)
                     .padding()
                     .background(Color.orange)
@@ -61,8 +62,9 @@ struct ContentView: View {
                     Button("\(IBULabel)\nIBU") {
                         // action here
                     }
+                    .font(.system(size: 21, weight: .bold, design: .default))
                     .multilineTextAlignment(.center)
-                    .frame(width: 100, height: 100, alignment: .center)
+                    .frame(width: 85, height: 85, alignment: .center)
                     .foregroundColor(.white)
                     .padding()
                     .background(Color.orange)
@@ -74,8 +76,9 @@ struct ContentView: View {
                     Button("\(WGALabel)\nWGA") {
                         // action here
                     }
+                    .font(.system(size: 21, weight: .bold, design: .default))
                     .multilineTextAlignment(.center)
-                    .frame(width: 100, height: 100, alignment: .center)
+                    .frame(width: 85, height: 85, alignment: .center)
                     .foregroundColor(.white)
                     .padding()
                     .background(Color.orange)
@@ -85,8 +88,9 @@ struct ContentView: View {
                     Button("\(isBack)\nZwrotna") {
                         // action here
                     }
+                    .font(.system(size: 21, weight: .bold, design: .default))
                     .multilineTextAlignment(.center)
-                    .frame(width: 100, height: 100, alignment: .center)
+                    .frame(width: 85, height: 85, alignment: .center)
                     .foregroundColor(.white)
                     .padding()
                     .background(Color.orange)
@@ -137,10 +141,11 @@ struct ContentView: View {
         if let image = image {
             Image(uiImage: image)
                 .resizable()
-                .frame(width: 200, height: 200, alignment: .center)
-                .scaledToFit()
+                .frame(width: 150, height: 150, alignment: .center)
+                .border(Color.gray, width: 1)
+                .scaledToFill()
         } else {
-            Text("No image selected")
+            Text("Nie wybrano zdjęcia")
         }
     }
     
