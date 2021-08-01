@@ -231,7 +231,7 @@ struct ContentView: View {
     }
     
     public func detect(image: CIImage) {
-        guard let model = try? VNCoreMLModel(for: BeerImageClassifier_1_1_03().model) else {
+        guard let model = try? VNCoreMLModel(for: BeerImageClassifier_1_1_03(configuration: .init()).model) else {
             fatalError("Wybacz")
         }
         let request = VNCoreMLRequest(model: model) { request, _ in
@@ -254,7 +254,7 @@ struct ContentView: View {
     }
     
     func detectBottle(image: CIImage) {
-        guard let model = try? VNCoreMLModel(for: IfIsABottleModel_1().model) else {
+        guard let model = try? VNCoreMLModel(for: IfIsABottleModel_1(configuration: .init()).model) else {
             fatalError("Sorry")
         }
         let request = VNCoreMLRequest(model: model) { request, _ in
