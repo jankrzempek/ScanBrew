@@ -17,6 +17,9 @@ struct ContentView: View {
     let settings = FirestoreSettings()
     let storage = Storage.storage().reference()
     let db = Firestore.firestore()
+    @State var title = "Proszę, zeskanuj piwo."
+    @State var showButtons = false
+    @State var errorAlert = false
     @State private var image: Image?
     @State var array: [String] = []
     @State var TestString: String = ""
@@ -33,17 +36,61 @@ struct ContentView: View {
                 .font(.title)
                 .bold()
             Spacer()
-            imageView(for: viewModel.selectedImage)
+            HStack {
+                Spacer()
+                if showButtons {
+                Button(action: {
+                    title = "Super!"
+                    print("Edit button was tapped")
+                    showButtons = false
+                }) {
+                    Image(systemName: "checkmark.shield")
+                        .resizable()
+                        .scaledToFill()
+                        .foregroundColor(Color.green)
+                }
+                .padding()
+                .frame(width: 80, height: 80, alignment: .center)
+                .overlay(
+                       RoundedRectangle(cornerRadius: 40)
+                           .stroke(Color.green, lineWidth: 2)
+                   )
+                .shadow(radius: 2)
+                }
+                Spacer()
+                imageView(for: viewModel.selectedImage)
+                Spacer()
+                if showButtons {
+                Button(action: {
+                    sendToCollection()
+                    showButtons = false
+                    title = "Zeskanuj kolejną butelkę"
+                }) {
+                    Image(systemName: "xmark.shield")
+                        .resizable()
+                        .scaledToFill()
+                        .foregroundColor(Color.red)
+                }
+                .padding()
+                .frame(width: 80, height: 80, alignment: .center)
+                .overlay(
+                       RoundedRectangle(cornerRadius: 40)
+                           .stroke(Color.red, lineWidth: 2)
+                   )
+                .shadow(radius: 2)
+                }
+                Spacer()
+            }
             Spacer()
-            Button("Niepoprawna butelka? Kliknij i pomóż usprawnić") {
-                sendToCollection()
+            Button(title) {
+               print("TRUE")
             }
             .font(.subheadline)
             .foregroundColor(.white)
             .padding()
             .background(Color.purple)
             .clipShape(Capsule())
-            .shadow(radius: 5)
+            .disabled(true)
             HStack {
                 Spacer()
                 VStack {
@@ -129,11 +176,16 @@ struct ContentView: View {
             ImagePicker(sourceType: viewModel.sourceType, completionHandler: viewModel.didSelectImage).ignoresSafeArea()
         })
             .onChange(of: viewModel.selectedImage) { value in
+                if value != nil {
                 guard let ciiImage = CIImage(image: value!) else {
                     fatalError("Sorry")
                 }
                 detectBottle(image: ciiImage)
+                }
             }
+        .alert(isPresented: $errorAlert, content: {
+            Alert(title: Text("Błąd"), message: Text("Coś poszło nie tak."), dismissButton: .default(Text("OK")))
+        })
     }
 
     @ViewBuilder
@@ -141,9 +193,8 @@ struct ContentView: View {
         if let image = image {
             Image(uiImage: image)
                 .resizable()
-                .frame(width: 150, height: 150, alignment: .center)
-                .border(Color.gray, width: 1)
-                .scaledToFill()
+                .aspectRatio(contentMode: .fit)
+//                .scaledToFit()
         } else {
             Text("Nie wybrano zdjęcia")
         }
@@ -152,6 +203,7 @@ struct ContentView: View {
     public func sendToCollection() {
         guard let pngImage = viewModel.selectedImage?.pngData() else {
             print("ERROR")
+            errorAlert = true
             return
         }
         let uuid = UUID()
@@ -160,8 +212,10 @@ struct ContentView: View {
         riversRef.putData(pngImage, metadata: nil) { metadata, _ in
             guard metadata != nil else {
                 print("error")
+                errorAlert = true
                 return
             }
+            print("SEND")
         }
     }
     
@@ -265,6 +319,12 @@ struct ContentView: View {
             if let firstResult = results.first {
                 if firstResult.identifier == "Bottle" {
                     self.detect(image: image)
+                    title = "Czy butelka jest poprawna?"
+                    showButtons = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 6.0) {
+                        title = "Zeskanuj kolejną butelkę"
+                        showButtons = false
+                    }
                 } else {
                     blessYou = "To nie jest butelka piwa"
                     name = "Nazwa na to nie istnieje"
